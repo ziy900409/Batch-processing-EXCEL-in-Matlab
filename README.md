@@ -19,5 +19,7 @@ Alternative plan, comment line 35 and Umcomment line 37, just add an append behi
 例如：1>10>11>2>3>4>5
 
 解決方法：直接使用原本的檔案名稱，並在結尾加_ed，可避免檔案搞混
+
 Comment line xlswrite(strcat(output_folder, '\', OutputFileName, '.xlsx'), y);
+
 Uncomment line xlswrite(strcat(output_folder, '\', Files(i), '_ed', '.xlsx'), y);
