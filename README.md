@@ -9,6 +9,7 @@ Important!!!
 Check variable "Files" in Workspace, because the order of files may inconsistent with your origin folder  
 Alternative plan, comment line 35 and Umcomment line 37, just add an append behind the origin files name, example: YourFileName_ed
 
+批次處理EXCEL,使用提取資料為範例
 1. 選擇input folder的路徑
 2. 選擇output folder的路徑
 3. 輸入想提取的欄位編號以及預計output file的名稱
