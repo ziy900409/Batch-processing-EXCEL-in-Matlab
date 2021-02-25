@@ -7,7 +7,7 @@ then, the program will auto extract data from excel and deal with all of excel f
 
 Important!!!
 Check variable "Files" in Workspace, because the order of files may inconsistent with your origin folder  
-Alternative plan, comment line 48 and Umcomment line 50, just add an append behind the origin files name, example: YourFileName_ed
+Alternative plan, comment line 35 and Umcomment line 37, just add an append behind the origin files name, example: YourFileName_ed
 
 1. 選擇input folder的路徑
 2. 選擇output folder的路徑
