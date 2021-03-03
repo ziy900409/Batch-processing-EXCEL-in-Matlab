@@ -8,6 +8,7 @@ then, the program will auto extract data from excel and deal with all of excel f
 Important!!!
 Check variable "Files" in Workspace, because the order of files may inconsistent with your origin folder  
 Alternative plan, comment line 35 and Umcomment line 37, just add an append behind the origin files name, example: YourFileName_ed
+If you want different appendent, just change '_ed' in line xlswrite.
 
 批次處理EXCEL,使用提取資料為範例
 1. 選擇input folder的路徑
@@ -23,3 +24,11 @@ Alternative plan, comment line 35 and Umcomment line 37, just add an append behi
 Comment line xlswrite(strcat(output_folder, '\', OutputFileName, '.xlsx'), y);
 
 Uncomment line xlswrite(strcat(output_folder, '\', Files(i), '_ed', '.xlsx'), y);
+
+--------------------Update----------------------------------------------------------------------------------------------------------
+Code_2
+新增一種輸入欄位方式，現在欄位可用數字以及excel預設的欄位來輸入
+1. 輸入欄位編號，不同欄位使用逗號(comma)分開，例如：1, 2, 3....
+2. 輸入excel欄位與範圍，不同欄位使用空格(space)分開，例如：A1:A500 B1:B500.....，整欄資訊 C:C D:D E:E....
+
+捨棄output file名稱，會讓使用者不好尋找原始檔案
