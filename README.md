@@ -1,7 +1,10 @@
 # Batch-processing-EXCEL-in-Matlab
 Frist, select the path of input files folder
+
 Second, input which columns do you need
+
 Third, select the path of output files folder
+
 then, the program will auto extract data from excel and deal with all of excel files in the folder
 
 
