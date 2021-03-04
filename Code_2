@@ -14,8 +14,8 @@ clc, clear
 
 %% create dialog
 % setting path of input and output floder
-input_folder = uigetdir('D:\TenLab\golf data\DataProcess_Hsin', 'Select the Path of input floder');
-output_folder = uigetdir('D:\TenLab\golf data', 'Select the Path of output floder');
+input_folder = uigetdir('D:\', 'Select the Path of input floder');
+output_folder = uigetdir('D:\', 'Select the Path of output floder');
 % input which cloumns do you want
 prompt = {'Cloumn (Please use ","  to seperate different number)','name of output file'};
 dlgtittle = 'input which columns do you want (Integer only!!)';
