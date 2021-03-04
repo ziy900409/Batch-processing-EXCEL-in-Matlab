@@ -29,6 +29,7 @@ Comment line xlswrite(strcat(output_folder, '\', OutputFileName, '.xlsx'), y);
 Uncomment line xlswrite(strcat(output_folder, '\', Files(i), '_ed', '.xlsx'), y);
 
 --------------------Update---------------------------------------------------------------------------------------------------
+
 Code_2 2021.03.03
 新增一種輸入欄位方式，現在欄位可用數字以及excel預設的欄位來輸入
 1. 輸入欄位編號，不同欄位使用逗號(comma)分開，例如：1, 2, 3....
