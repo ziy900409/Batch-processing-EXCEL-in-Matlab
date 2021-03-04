@@ -1,12 +1,12 @@
 # Batch-processing-EXCEL-in-Matlab
 Frist, select the path of input files folder
-
 Second, input which columns do you need
-
 Third, select the path of output files folder
-
 then, the program will auto extract data from excel and deal with all of excel files in the folder
 
+Cloums input can using 1, 3, 5 to represent cloumns, number between number using ',' to separate its
+
+OR using B2:B4 to represent EXCEL cloumns, string between string using 'space' to separate its
 
 Important!!!
 Check variable "Files" in Workspace, because the order of files may inconsistent with your origin folder  
@@ -29,9 +29,14 @@ Comment line xlswrite(strcat(output_folder, '\', OutputFileName, '.xlsx'), y);
 Uncomment line xlswrite(strcat(output_folder, '\', Files(i), '_ed', '.xlsx'), y);
 
 --------------------Update----------------------------------------------------------------------------------------------------------
-Code_2
+Code_2 2021.03.03
 新增一種輸入欄位方式，現在欄位可用數字以及excel預設的欄位來輸入
 1. 輸入欄位編號，不同欄位使用逗號(comma)分開，例如：1, 2, 3....
 2. 輸入excel欄位與範圍，不同欄位使用空格(space)分開，例如：A1:A500 B1:B500.....，整欄資訊 C:C D:D E:E....
 
 捨棄output file名稱，會讓使用者不好尋找原始檔案
+
+Code_3 2021.03.04
+新增批次處理多層檔案夾的方法
+FolderList: 回傳所有該檔案夾下所有檔案名稱及路徑
+再創建新檔案夾，遍歷所有檔案
